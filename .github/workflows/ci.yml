@@ -32,7 +32,7 @@ jobs:
         run: |
           curl -f http://localhost:8000/ || exit 1
 
-      - name: Stop Docker container
-        run: |
-          docker ps -q --filter "ancestor=my-fastapi-app" | xargs docker stop
-          docker ps -aq --filter "ancestor=my-fastapi-app" | xargs docker rm
+      # - name: Stop Docker container
+      #   run: |
+      #     docker ps -q --filter "ancestor=my-fastapi-app" | xargs docker stop
+      #     docker ps -aq --filter "ancestor=my-fastapi-app" | xargs docker rm
